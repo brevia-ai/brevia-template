@@ -1,0 +1,18 @@
+service: myapp.MyService
+
+output_path: "/path/to/output/output.txt"
+
+payload:
+  file_path: "/path/to/file.pdf"
+
+  prompts:
+      summarize:
+        _type: prompt
+        input_variables:
+          ["text"]
+        template: |
+          Write a short summary of this text:
+          ------------
+          {text}
+          ------------
+

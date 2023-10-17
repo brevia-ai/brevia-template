@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "brevia-template"
+version = "0.0.1"
+description = ""
+authors = [
+  "Niki Corradetti <niki.corradetti@atlasconsulting.it>",
+  "Stefano Rosanelli <stefano.rosanelli@atlasconsulting.it>"
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+brevia = "^0.0.2"
+en_core_web_sm = {url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.6.0/en_core_web_sm-3.6.0.tar.gz"}
+fasttext = {git = "https://github.com/cfculhane/fastText", rev = "main"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
